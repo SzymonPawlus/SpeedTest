@@ -24,7 +24,7 @@ async function singleTest() {
     let fd = new FormData();
     fd.append('file', randomData(256 * 1024));
     let t0 = performance.now();
-    await fetch('http://www.blankwebsite.com/', {
+    await fetch('https://szymonpawlus.github.io/SpeedTest/dataSender.php', {
         mode: 'no-cors',
         method: "POST",
         body: fd
